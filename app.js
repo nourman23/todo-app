@@ -3,8 +3,10 @@
 let name = prompt("Your name ?");
 let gender = prompt("Your gender ? ");
 let age = prompt("Your age ?");
+if(age<0){
+    alert("Your age should be greater than 0");
 
-
+}
 
 if(confirm("do you want to skip the welcoming message ?") == false){
     switch(gender){
