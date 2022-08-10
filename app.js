@@ -15,6 +15,7 @@ if(confirm("do you want to skip the welcoming message ?") == false){
 
         case "male": case "Male":
             window.alert("Welcome  Mr" + name );
+            break;
             default:
                 window.alert("Welcome  " + name );
             
