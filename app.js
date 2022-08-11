@@ -24,3 +24,47 @@ if(confirm("do you want to skip the welcoming message ?") == false){
 
     }
 }
+
+
+
+let answers =[];
+answers[0]=prompt(" Do you like Red ?");
+answers[1]=prompt("Do you like Yellow ?");
+answers[2]=prompt("Do you like Black ?");
+
+for(let i=0 ; i<3 ; i++){
+ switch(answers[i]){
+    case "Yes":
+    case "y":
+    case "yes":
+
+        break;
+
+    case "No":
+    case "n":
+    case "no":
+        break;
+
+    default:
+        answers[i]="invalid";
+
+}
+}
+
+console.log(answers);
+
+let num =prompt("How many stars you rate my website ?");
+
+while(isNaN(num))
+    num =prompt("How many stars you rate my website ?");
+if(num<0)
+num=0;
+else if (num>5)
+num=5;
+
+
+console.log("u rated :    "+ num);
+alert("thank u");
+
+
+
